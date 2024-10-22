@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="lightGray">
-        <Label Content="Program do liczenia włosów" FontSize="40" HorizontalAlignment="Center" FontStyle="Italic" Margin="0,10,0,-10"/>
-      
+        <Label Content="Program do liczenia włosów" FontSize="40" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <Label Content="Podaj obwód swojej głowy:" FontSize="13" Margin="153,71,480,293"/>
+        <Label Content="Podaj długość czoła swojej głowy:" FontSize="13" Margin="429,71,153,293"/>
+        <TextBox TextWrapping="Wrap"  Margin="127,106,467,280"/>
+        <TextBox TextWrapping="Wrap"  Margin="435,106,159,280"/>
+
     </Grid>
 </Window>
