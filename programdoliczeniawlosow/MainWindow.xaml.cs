@@ -16,6 +16,7 @@ namespace programdoliczeniawlosow
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +28,14 @@ namespace programdoliczeniawlosow
             {
                 int obwodGlowy = int.Parse(Obwglowy.Text);
                 int wysokoscCzola = int.Parse(DlCzola.Text);
-            }
+
+                double promien = obwodGlowy / (2 * Math.PI);
+                double powierzchnia = 4 * Math.PI * Math.Pow(promien, 2);
+                double iloscWlosow = powierzchnia * 100;
+
+
+
+        }
 
        
 
