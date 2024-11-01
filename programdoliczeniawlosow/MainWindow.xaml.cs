@@ -33,7 +33,7 @@ namespace programdoliczeniawlosow
                 double powierzchnia = 4 * Math.PI * Math.Pow(promien, 2);
                 double iloscWlosow = powierzchnia * 100;
 
-
+               IlWlosow.Text = Math.Round(iloscWlosow).ToString();
 
         }
 
