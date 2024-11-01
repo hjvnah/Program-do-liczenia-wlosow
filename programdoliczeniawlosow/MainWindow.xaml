@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:programdoliczeniawlosow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="lightGray">
+    <Grid Background="lightGray" Margin="0,0,-16,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="373*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
         <Label Content="Program do liczenia włosów" FontSize="40" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <Label Content="Podaj obwód swojej głowy:" FontSize="13" Margin="153,71,480,293"/>
-        <Label Content="Podaj długość czoła swojej głowy:" FontSize="13" Margin="429,71,153,293"/>
-        <TextBox TextWrapping="Wrap"  Margin="127,106,467,280"/>
-        <TextBox TextWrapping="Wrap"  Margin="435,106,159,280"/>
+        <Label Content="Podaj obwód swojej głowy:" FontSize="13" Margin="153,71,426,293"/>
+        <Label Content="Podaj długość czoła swojej głowy:" FontSize="13" Margin="429,71,99,293"/>
+        <TextBox TextWrapping="Wrap"  Margin="127,106,413,280"/>
+        <TextBox TextWrapping="Wrap"  Margin="435,106,105,280"/>
+        <TextBlock TextWrapping="Wrap" FontSize="30" Text="Ilość twoich włosów na głowie wynosi:" FontStyle="Italic" Margin="127,185,89,176"/>
+        <TextBox TextWrapping="Wrap" Margin="279,241,271,157"/>
+        <Button Content="RESET" Background="White" FontSize="20" Margin="268,314,256,69"/>
 
     </Grid>
 </Window>
