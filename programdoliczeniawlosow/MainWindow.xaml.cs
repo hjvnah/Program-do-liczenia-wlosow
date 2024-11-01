@@ -24,8 +24,9 @@ namespace programdoliczeniawlosow
         }
       
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Liczeniewlosow(object sender, TextChangedEventArgs e)
             {
+            
                 int obwodGlowy = int.Parse(Obwglowy.Text);
                 int wysokoscCzola = int.Parse(DlCzola.Text);
 
@@ -33,13 +34,20 @@ namespace programdoliczeniawlosow
                 double powierzchnia = 4 * Math.PI * Math.Pow(promien, 2);
                 double iloscWlosow = powierzchnia * 100;
 
-               IlWlosow.Text = Math.Round(iloscWlosow).ToString();
+                IlWlosow.Text = Math.Round(iloscWlosow).ToString();
+            
+        }
+        private void Reset(object sender, RoutedEventArgs e)
+        {
+            Obwglowy.Text = string.Empty;  
+            DlCzola.Text = string.Empty;
+            IlWlosow.Text = string.Empty;
 
         }
 
-       
 
-        }
+
+    }
 
     }
     

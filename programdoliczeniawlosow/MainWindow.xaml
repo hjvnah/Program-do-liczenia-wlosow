@@ -18,8 +18,8 @@
         <TextBox x:Name="DlCzola"  TextWrapping="Wrap"  Margin="435,106,105,280"/>
         <TextBlock TextWrapping="Wrap" FontSize="30" Text="Ilość twoich włosów na głowie wynosi:" FontStyle="Italic" Margin="127,185,89,176"/>
         <TextBox x:Name="IlWlosow" TextWrapping="Wrap" Margin="279,241,271,157"/>
-        <Button Content="RESET" Background="White" FontSize="20" Margin="145,328,381,55"/>
-        <Button Content="PRZESLIJ" Background="White" FontSize="20" Margin="425,328,99,55"/>
+        <Button Content="RESET" Click="Reset" Background="White" FontSize="20" Margin="145,328,381,55"/>
+        <Button Content="PRZESLIJ" Click="Liczeniewlosow"  Background="White" FontSize="20" Margin="425,328,99,55"/>
 
     </Grid>
 </Window>
