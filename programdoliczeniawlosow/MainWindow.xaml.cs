@@ -19,11 +19,20 @@ namespace programdoliczeniawlosow
         public MainWindow()
         {
             InitializeComponent();
+            
         }
+      
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+            {
+                int obwodGlowy = int.Parse(Obwglowy.Text);
+                int wysokoscCzola = int.Parse(DlCzola.Text);
+            }
+
+       
 
         }
+
     }
+    
 }
